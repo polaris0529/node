@@ -1,1 +1,20 @@
+미들웨어 ( middle ware ) 
+
+라우터 모듈 ?   모듈 
+
 CLI (Command Line Interface) 명령어 기반 인터페이스 도구
+
+
+#https://psyhm.tistory.com/6?category=654716
+그런데 보통의 웹서비스에서 정적파일들은 Node.js보단 nginx 같은 프록시 서버가
+메모리 캐시를 이용하여 정적 파일(static file)들을 제공한다고 한다.
+ 
+프록시 서버를 거쳐 express가 돌아가는 서버에 와서 제공하는 것보다 
+프록시 서버가 바로 제공하는 것이 좀 더 빠르기 때문이다. 
+ 
+#웹 브라우저에서 HTML 문서 렌더링 과정 ( 동작 순서 );
+ https://jeong-pro.tistory.com/90
+
+
+#자주 찾아보는 자바스크립트 코드 모음이다.
+https://subji.github.io/posts/2020/02/20/usefulljavascriptcodes

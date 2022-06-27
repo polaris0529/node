@@ -6,9 +6,9 @@ var app = express();
 var indexRouter = require('./routes/index');
 var userRotuer  = require('./routes/users');
 
-app.set
 app.use('/',indexRouter);
 app.use('/users',userRotuer);
+
 app.set('view enigne', 'ejs');
 
 
