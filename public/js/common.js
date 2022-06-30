@@ -1,0 +1,6 @@
+var request = {};
+
+function init(){
+
+
+}

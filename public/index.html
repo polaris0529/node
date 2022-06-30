@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css"> <!-- public 경로가 이미 최상단 -->
     <title>Document</title>
 </head>
 <body>
-    <h1>public</h1>
+    <section class="header">
+        <nav>
+            <h3>active response</h3>
+            <h2 class="title"></h2>
+        </nav>
+    </section>
+    <section class="main">
+        <article>
+            <div>
+                <span id="res"></span>
+            </div>
+            <form action="/index/btn" method="post">
+                <h2>post</h2>
+                <p><input type="text" id="text1" name="text1" value="1"></p>
+                <p><input type="text" id="text2" name="text2" value="1"></p>
+                <p><input type="text" id="text3" name="text3" value="1"></p>
+                <input type="submit">
+            </form>
+        </article>
+            <form action="/index/btn" method="get">
+                <h2>get</h2>
+                <p><input type="text" id="text1" name="text1" value="1"></p>
+                <p><input type="text" id="text2" name="text2" value="1"></p>
+                <p><input type="text" id="text3" name="text3" value="1"></p>
+                <input type="submit">
+            </form>
+        </article>
+    </section>
+    <section class="footer"></section>
 </body>
+
+<script src="js/common.js"></script>
+<script>
+</script>
 </html>
