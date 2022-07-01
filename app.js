@@ -7,13 +7,14 @@ var userRotuer  = require('./routes/users');
 
 
 app.use(express.static(path.join(__dirname + "/public")));
-
+app.use('/bootstrap',express.static(path.join(__dirname+'/node_modules/bootstrap/dist'))); // redirect bootstartp
 
 app.use(express.json()); 
 app.use(express.urlencoded( {extended : false } ));   // json parsing 후에 router 지정;;;
 
 app.use('/',indexRouter);
-app.use('/users',userRotuer);
+app.use('/user',userRotuer);
+
 
 
 app.use(( error , req ,res ,next ) => {

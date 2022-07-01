@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css"> <!-- public 경로가 이미 최상단 -->
+    <title>render</title>
+</head>
+<body>
+    <section>
+        <h2 class="title">
+            <span>title : </span>
+            <div class="wildcard-1">wildcard1</div>
+            <div class="wildcard-2">wildcard2</div>
+            <div class="wildcard-3">wildcard3</div>
+            <div class="wildcard-4">wildcard4</div>
+            <div class="4-wildcard-">wildcard4</div>
+        </h2>
+    </section>
+</body>
+
+<script src="js/common.js"></script>
+<script>
+</script>
+
+<style>
+    div[class*="wildcard-"] { color: aqua; }
+
+</style>
+</html>
