@@ -4,53 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="/css/default.css"> public 경로가 이미 최상단 -->
-    <!-- START bootstrap-5.1.3-dist -->
-    <!-- <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap-grid.css">
-    <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap-grid.rtl.css">
-    <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap-reboot.css">
-    <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap-utilities.css">
-    <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap.css">
-    <link rel="stylesheet" href="/css/bootstrap-5.1.3-dist/bootstrap.rtl.css">  -->
+    <title>mainHome</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <!-- END bootstrap-5.1.3-dist-->
-
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <span class="w-100 d-block text-center">active response</span>            
-        </nav>
-    </section>
-    <section class="main">
-        <article>
-            <div>
-                <span id="res"></span>
-            </div>
-            <form action="/index/btn" method="post">
-                <h2>post</h2>
-                <p><input type="text" id="text1" name="text1" value="1"></p>
-                <p><input type="text" id="text2" name="text2" value="1"></p>
-                <p><input type="text" id="text3" name="text3" value="1"></p>
-                <input type="submit">
-            </form>
-        </article>
-            <form action="/index/btn" method="get">
-                <h2>get</h2>
-                <p><input type="text" id="text1" name="text1" value="1"></p>
-                <p><input type="text" id="text2" name="text2" value="1"></p>
-                <p><input type="text" id="text3" name="text3" value="1"></p>
-                <input type="submit">
-            </form>
-        </article>
-    </section>
-    <section class="footer"></section>
+    <div id="app" class="vh-100">
+        <header class="h-50 bg-dark">            
+            <nav class="container d-flex justify-content-between px-2 py-1 mb-5">
+                <div>
+                    <!-- <img src="" alt="logo"> -->
+                    <span><a href="#" class="font-weight-bold text-white">Start Bootstrap</a></span>
+                </div>
+                <ul class="dropdown d-flex">
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">Home</a></li>
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">About</a></li>
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">FAQ</a></li>
+                    <li class="nav-item"><a href="#" class="text-secondary me-3">Blog</a></li>                    
+                </ul>
+            </nav>
+
+            <!-- NAV END-->
+
+            <section class="container d-flex justify-content-between px-8 py-1">
+                <div class="left w-50 border px-1 py-1">
+                    <h2 class="text-white">A Bootstrap 5 template <br>for modern businesses</h2>
+                    <p class="text-secondary">Quickly design and customize responsive mobile-first sites with<br>Bootstrap, the world’s most popular front-end open source <br>toolkit!</p><br>
+                    <div class="d-flex px-1 py-4 justify-content-start">
+                        <button class="btn text-white bg-primary me-3">Get started</button>
+                        <button class="btn text-white bg-transparent border-white">Get started</button>
+                    </div>
+                </div>
+                <div class="right class w-50 border px-4 py-1">
+                    <img src="" alt="...">
+                </div>                
+            </section>
+        </header>
+        <main class="border container py-5">
+            <section class="container py-4" style="height: 50vh;">
+                <div class="h-100 border">1</div>
+            </section>        
+            <section class="container py-4" style="height: 50vh;">
+                <div class="h-100 border">1</div>
+            </section>        
+            <section class="container py-4" style="height: 50vh;">
+                <div class="h-100 border">1</div>
+            </section>
+            <article class="ad-banner px-2">
+                <div class="container d-flex justify-content-between px-5 py-3 bg-primary rounded">            
+                    <div class="left">
+                        <h2 class="text-white">New products, delivered to you.</h2>
+                        <p class="text-white mb-0">Sign up for our newsletter for the latest updates.</p>
+                    </div>        
+
+                    <div class="right w-40">
+                        <div class="d-flex flex-column align-items-center">
+                            <form action="#" method="post" 6class="w-100 input-group">
+                                <input type="text" class="form-control" placeholder="Eamil address...">
+                                <div class="input-group-append">
+                                    <input type="button" class="bg-transparent btn border-white text-white rounded-right"  value="Sign up">
+                                </div>
+                            </form>
+                            <span class="text-white">We care about privacy, and will never share your data.</span>    
+                        </div>
+                    </div>        
+
+                </div>
+            </article>        
+        </main>
+        <footer class="bg-dark py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <span class="left text-white">Copyright © Your Website 2022</span>
+                <span class="right border">
+                    <span><a href="#" class="text-white me-2">lorem</a></span>
+                    <span><a href="#" class="text-white me-2">lorem</a></span>
+                    <span><a href="#" class="text-white">lorem</a></span>
+                </span>
+            </div>            
+        </footer>
+    </div>
 </body>
-
-
 <link rel="stylesheet" href="/bootstrap/js/bootstrap.min.js">
-<!-- <script src="js/common.js"></script> -->
+<style>
+    * { 
+        padding: 0px; margin : 0px;
+    }
+    ul,li,ol,a {
+        color: #000;
+        text-decoration: none;
+        padding: 0px; 
+        list-style: none;
+    }
+</style>
 <script>
 </script>
 </html>

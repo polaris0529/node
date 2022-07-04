@@ -18,7 +18,16 @@ router.post('/login.do',( req, res , next)=>{
 
 })
 
+router.get('/engine',( req, res , next)=>{
 
+
+    
+    res.render('engine', {
+         title : 'engnine',
+         length : 5
+        });
+
+})
 
 
 

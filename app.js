@@ -1,10 +1,25 @@
 var express = require('express');
 const path = require('node:path'); //current path;
 var app = express();
+const ejs = require('ejs');
+const mysql = require('mysql');
+
+// const con = mysql.createConnection({
+//   host : 'localhost',
+//   user : 'root' , 
+//   passworld : ''
+// });
+
+// con.connect((error) =>{
+//     if(error) throw error;
+//     console.log('Connected');
+// })
 
 var indexRouter = require('./routes/index');
 var userRotuer  = require('./routes/users');
 
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname,'views'));
 
 app.use(express.static(path.join(__dirname + "/public")));
 app.use('/bootstrap',express.static(path.join(__dirname+'/node_modules/bootstrap/dist'))); // redirect bootstartp
