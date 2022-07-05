@@ -1,0 +1,10 @@
+// const con = mysql.createConnection({
+//   host : 'localhost',
+//   user : 'root' , 
+//   passworld : ''
+// });
+
+// con.connect((error) =>{
+//     if(error) throw error;
+//     console.log('Connected');
+// })
