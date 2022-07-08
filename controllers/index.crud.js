@@ -13,13 +13,6 @@ let read = (req,res) => {
 
     if(query.board){
 
-
-
-
-
-
-
-
         res.render('engine');
     }
 

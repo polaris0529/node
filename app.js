@@ -2,6 +2,10 @@ var express = require('express');
 const path = require('node:path'); //current path;
 var app = express();
 var expressSession = require('express-session');
+
+const schedule = require('node-schedule');
+const j = schedule.scheduleJob("0 0-59 * * * *" , () => { console.log('매분 실행'); });
+
 const ejs = require('ejs');
 const mysql = require('mysql');
 
@@ -30,7 +34,7 @@ app.use(express.urlencoded( {extended : false } ));   // json parsing 후에 rou
 
 
 //app.use('/',(req,res)=> {  res.send('index'); }) // default
-app.use('/index',indexRouter);ap
+app.use('/index',indexRouter);
 
 
 

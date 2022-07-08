@@ -27,3 +27,12 @@ view Engine;
 
 RPG PATTERN ( POST REDIRECT GET; )
 
+
+
+<a href="https://psnet.skpsnm.com/groupware/layout/mltbbs_PcIpRequestWrite.do?CLSYS=custom&amp;CLMD=mltbbs&amp;CLBIZ=Custom&amp;bbsId=10&amp;menuID=453&amp;subMenuID=463&amp;currentMenuID=467"
+    target="_self" style="color:white" 
+    onclick="g_urlHistory = 'https://psnet.skpsnm.com/groupware/layout/mltbbs_PcIpRequestList.do?CLSYS=custom&amp;CLMD=mltbbs&amp;CLBIZ=Custom&amp;bbsId=10&amp;menuID=453&amp;subMenuID=463&amp;currentMenuID=467' ">IP사용신청 &gt;
+</a>
+
+location.replace()   전역변수 set;
+location.href _self  전역변수 set;
